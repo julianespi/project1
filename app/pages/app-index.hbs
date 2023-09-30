@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link href="/assets/css/app.css" rel ="stylesheet" >
+    </head>
+    <body>
+        <h1>Welcome to the app!</h1>
+
+    <div object>
+        <h2>Bills</h2>
+            
+            <div class="bills" key="bills" array sortable>
+                 {{#for bills in bills}}
+                 <div class="bills" 
+                    object
+                    key:text="@innerText" 
+                    edit:text
+                    >{{ default bills.text "New bill" }}</div>
+                {{/for}}                
+            </div>
+            
+        <button class="add-bill" new:bills>Add bill</button>
+    </div>
+    <br><br>
+    <a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
+    </body>
+</html>
