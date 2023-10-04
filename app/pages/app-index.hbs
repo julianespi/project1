@@ -3,24 +3,82 @@
         <link href="/assets/css/app.css" rel ="stylesheet" >
     </head>
     <body>
-        <h1>Welcome to the app!</h1>
+    <h1>Welcome to the app!</h1>
 
-    <div object>
-        <h2>Bills</h2>
-            
-            <div class="bills" key="bills" array sortable>
-                 {{#for bills in bills}}
-                 <div class="bills" 
-                    object
-                    key:text="@innerText" 
-                    edit:text
-                    >{{ default bills.text "New bill" }}</div>
-                {{/for}}                
-            </div>
-            
-        <button class="add-bill" new:bills>Add bill</button>
+    <h2>Bills</h2>
     </div>
-    <br><br>
-    <a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
+    <button 
+        class="button button--add-stack"
+        new:stack
+    >Add stack</button>
+
+        {{!-- <button       remove button
+        class="button button--add-stack"
+        delete:stack
+    >remove stack</button> --}}
+
+    </div>
+    <div class="board-container">
+        <div 
+            class="board"
+            array
+            key="stacks"
+            sortable="stacks"
+        >
+            {{#for stack in stacks}}
+            <div 
+                class="monthlyBill"
+                object
+                key:stack-heading="@search"
+                default:stack-heading="A Project"
+            >
+                <div class="bill__top">
+                <p 
+                    class="stack__text"
+                    target:stack-heading="@innerText"
+                    edit:stack-heading
+                >{{default stack.stackHeading "New Monthly Bill"}}</p>
+                    <div class = "buttons">
+                        <div>
+                        <button 
+                            class="button button--plus-square"
+                            new:card
+                        >
+                            Add Bill
+                        </button>
+                        </div>
+                        <div>
+                        <button 
+                            remove:with-confirm>
+                            Pay Bill
+                        </button>
+                        </div>
+                    </div>
+                <div 
+                class="stack__list"
+                key="cards"
+                array
+                sortable="cards"
+                >
+                {{#for card in stack.cards}}
+                    <div 
+                    class="bill"
+                    object
+                    key:card-text="@search"
+                    edit:card-text
+                    >
+                    <p 
+                        class="card__text"
+                        target:card-text="@innerText"
+                    >{{default card.cardText "New Bill"}}</p>
+                    
+                    </div>
+                {{/for}}
+                </div>
+
+            </div>
+            {{/for}}
+        </div>
+    </div>
     </body>
 </html>
