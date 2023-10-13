@@ -3,6 +3,14 @@ div.buttonContainer{
   display: flex;
   justify-content: center;
   background-color: none;
+  flex-direction: column;
+}
+
+.instructions{
+  background-color: rgb(225, 238, 45);
+  margin: 5px;
+  padding: 5px;
+  width: 190px;
 }
 
 .addBill{
@@ -11,7 +19,8 @@ div.buttonContainer{
   background-image: url(/assets/images/stickynote.png);
   background-repeat: no-repeat;
    background-size: contain; 
-   height: 85px;
+   height: 190px;
+   width: 190px;
 
 }
 
