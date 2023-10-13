@@ -1,11 +1,24 @@
+div.buttonContainer{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: none;
+}
 
+.addBill{
+  background-color: none;
+  border: none;
+  background-image: url(/assets/images/stickynote.png);
+  background-repeat: no-repeat;
+   background-size: contain; 
+   height: 85px;
 
+}
 
-
-body.appPage{
-  
-  width: 100%;
-  
+body button.addBill{
+  margin:20px;
+  padding: 20px;
+  justify-content: center;
 }
 
 .board
@@ -23,7 +36,6 @@ body.appPage{
 div.monthlyBill{
   display: flex;
   flex-direction: column;
-  background-color:white;
   background-image: url(/assets/images/th.jpg);
   margin: 10px;
   position: top;
