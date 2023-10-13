@@ -2,28 +2,20 @@
     <head>
         <link href="/assets/css/app.css" rel ="stylesheet" >
     </head>
-    <body>
-    <h1>Welcome to the app!</h1>
-
-    <h2>Bills</h2>
-    </div>
+    <body class = "appPage">
+    
+    
     <button 
-        class="button button--add-stack"
+        class="addBill"
         new:stack
-    >Add stack</button>
+    >Add Bill</button>
 
-        {{!-- <button       remove button
-        class="button button--add-stack"
-        delete:stack
-    >remove stack</button> --}}
-
-    </div>
+    
     <div class="board-container">
         <div 
             class="board"
             array
             key="stacks"
-            sortable="stacks"
         >
             {{#for stack in stacks}}
             <div 
@@ -32,35 +24,44 @@
                 key:stack-heading="@search"
                 default:stack-heading="A Project"
             >
+                
                 <div class="bill__top">
                 <p 
                     class="stack__text"
                     target:stack-heading="@innerText"
                     edit:stack-heading
                 >{{default stack.stackHeading "New Monthly Bill"}}</p>
+                </div>
                     <div class = "buttons">
                         <div>
-                        <button 
-                            class="button button--plus-square"
-                            new:card
-                        >
-                            Add Bill
-                        </button>
-                        </div>
-                        <div>
-                        <button 
-                            remove:with-confirm>
-                            Pay Bill
-                        </button>
+                            <button 
+                                class="button button--plus-square"
+                                new:card
+                            >
+                                Add Bill
+                            </button>
+                            <button 
+                                remove:with-confirm>
+                                Pay Bill
+                            </button>
+                            
+                            <div class = "totalBill">
+                            <button>
+                                Calculate total Bill
+                            </button>
+                            <p>Total Of Bills: $0.00  </p> 
+                            </div>
                         </div>
                     </div>
-                <div 
+                <div
                 class="stack__list"
                 key="cards"
                 array
                 sortable="cards"
                 >
+                
                 {{#for card in stack.cards}}
+                
                     <div 
                     class="bill"
                     object
@@ -70,15 +71,30 @@
                     <p 
                         class="card__text"
                         target:card-text="@innerText"
-                    >{{default card.cardText "New Bill"}}</p>
+                    >{{default card.cardText "New Bill: $0.00 "}}</p>
+
                     
+
+                  
                     </div>
                 {{/for}}
-                </div>
+                
 
+
+                    
+
+                
+
+            </div>
+                    <div class="bill">
+                    <p>End Of Bill</p>
+                    </div>
             </div>
             {{/for}}
         </div>
     </div>
+
+        <script src="/assets/js/main.js"></script>
+
     </body>
 </html>

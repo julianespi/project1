@@ -1,35 +1,62 @@
 
 
+
+
+body.appPage{
+  
+  width: 100%;
+  
+}
+
 .board
 {
   display: flex;
   flex-direction: row;
-  background-color: yellow;
+  background-image: url(/assets/images/board.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 60px;
+  flex-wrap: wrap;
+  
 }
 
 div.monthlyBill{
   display: flex;
   flex-direction: column;
-  background-color:green;
+  background-color:white;
+  background-image: url(/assets/images/th.jpg);
   margin: 10px;
-  padding: 10px;
+  position: top;
+  
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
   max-width: 300px;
 }
 
 div.bill__top{
-  background-color: aquamarine;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: right;
+}
+
+div.buttons{
+  display: flex;
+  justify-content: center;
 }
 
 div.bill{
   display: flex;
   flex-direction: column;
-  background-color: blue;
+  background-color: wheat;
   margin: 10px;
   padding: 10px;
-
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
-
+div.bill:hover {
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+}
 
 
 
