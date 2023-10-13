@@ -4,20 +4,29 @@
     </head>
     <body class = "appPage">
     
-    
-    <button 
-        class="addBill"
-        new:stack
-    >Add Bill</button>
+
 
     
     <div class="board-container">
+
+
+
         <div 
             class="board"
             array
             key="stacks"
         >
+
+                <div class = "buttonContainer">
+        <button 
+            class="addBill"
+            new:stack
+        >Add Bill</button>
+        </div>
             {{#for stack in stacks}}
+
+            
+
             <div 
                 class="monthlyBill"
                 object
@@ -72,26 +81,20 @@
                         class="card__text"
                         target:card-text="@innerText"
                     >{{default card.cardText "New Bill: $0.00 "}}</p>
-
-                    
-
-                  
                     </div>
                 {{/for}}
-                
-
-
-                    
-
-                
-
             </div>
                     <div class="bill">
                     <p>End Of Bill</p>
                     </div>
             </div>
+            
             {{/for}}
+
+            
+            
         </div>
+        
     </div>
 
         <script src="/assets/js/main.js"></script>
