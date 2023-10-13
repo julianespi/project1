@@ -3,30 +3,23 @@
         <link href="/assets/css/app.css" rel ="stylesheet" >
     </head>
     <body class = "appPage">
-    
-
-
-    
     <div class="board-container">
-
-
-
         <div 
             class="board"
             array
             key="stacks"
         >
-
                 <div class = "buttonContainer">
-        <button 
-            class="addBill"
-            new:stack
-        >Add Bill</button>
+                <button 
+                    class="addBill"
+                    new:stack
+                >Add montly Bill</button>
+                <div class = "instructions">   
+                    <p>Enter your bills as follows: bill type: $0.00 in order for the calcuator to work</p>
+                </div>
+        
         </div>
             {{#for stack in stacks}}
-
-            
-
             <div 
                 class="monthlyBill"
                 object
@@ -88,13 +81,8 @@
                     <p>End Of Bill</p>
                     </div>
             </div>
-            
             {{/for}}
-
-            
-            
         </div>
-        
     </div>
 
         <script src="/assets/js/main.js"></script>
