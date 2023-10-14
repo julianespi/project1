@@ -1,0 +1,43 @@
+{
+  "stacks": [
+    {
+      "stackHeading": "june",
+      "cards": [
+        {
+          "cardText": "New Bill: $0"
+        },
+        {
+          "cardText": "New Bill: $125"
+        }
+      ]
+    },
+    {
+      "stackHeading": "may",
+      "cards": []
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": [
+        {
+          "cardText": "New Bill: $85"
+        },
+        {
+          "cardText": "New Bill: $45"
+        }
+      ]
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": [
+        {
+          "cardText": "New Bill: $6"
+        }
+      ]
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": []
+    }
+  ],
+  "id": "nLZK4vkzET830J"
+}

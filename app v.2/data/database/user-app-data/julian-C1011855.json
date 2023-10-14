@@ -1,0 +1,138 @@
+{
+  "stacks": [
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": []
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": []
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": []
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": []
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": []
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": []
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": []
+    },
+    {
+      "stackHeading": "New Monthly Bill",
+      "cards": [
+        {
+          "cardText": "New Bill $0.00"
+        }
+      ]
+    }
+  ],
+  "bills": [
+    {
+      "text": "electric",
+      "id": "1O1BsmSaFNsGP6"
+    },
+    {
+      "text": "gas",
+      "id": "33MEpSY8AvaoeG"
+    },
+    {
+      "text": "intenet",
+      "id": "x4BtPiAGNVytvn"
+    },
+    {
+      "text": "New bill",
+      "id": "WvNKieuYauxNj7"
+    },
+    {
+      "text": "New bill",
+      "id": "F6yE4sZmC5ZI6B"
+    }
+  ],
+  "month": [
+    {
+      "bills": [
+        {
+          "text": "gas",
+          "id": "rRl8VlhdqkhH6d"
+        },
+        {
+          "text": "electric",
+          "id": "R3Ugw0kk0ZHRkE"
+        },
+        {
+          "text": "intenet",
+          "id": "uILlU9NaY7AeRN"
+        },
+        {
+          "text": "New bill",
+          "id": "t3Xn3CXgNyB36t"
+        },
+        {
+          "text": "New bill",
+          "id": "1Ib6ymBLk4rm1j"
+        },
+        {
+          "text": "New bill",
+          "id": "m8KMAuhaCM427q"
+        }
+      ],
+      "id": "o4I1O9UKsrHK6z"
+    }
+  ],
+  "listBills": [
+    {
+      "bills": [],
+      "id": "TgJESiLIjGNnys"
+    },
+    {
+      "bills": [
+        {
+          "text": "gas",
+          "id": "io4y7gFBlA6XFq"
+        },
+        {
+          "text": "electric",
+          "id": "a3bTNOyRWQgFzt"
+        },
+        {
+          "text": "internet",
+          "id": "aKFRi3YNWNuHNC"
+        }
+      ],
+      "id": "ta8I9atQKTrCrx"
+    },
+    {
+      "bills": [],
+      "id": "IZkNPQbjCLPOuQ"
+    },
+    {
+      "bills": [],
+      "id": "Gf7gzMp4RDeAB3"
+    },
+    {
+      "bills": [],
+      "id": "jjFaQlxdgJpIx7"
+    },
+    {
+      "bills": [],
+      "id": "ys6CvNeP8bwaqz"
+    },
+    {
+      "bills": [],
+      "id": "YZWxUctsHE1ZHo"
+    }
+  ],
+  "todos": [],
+  "id": "ijHqrWK1y9TqxI"
+}
