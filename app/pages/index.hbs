@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head>
+    <body>
+        <div class ="flexcontainer">
+            
+            <h1>
+                Keeping track of your bills, made easy
+            </h1>
+            <img id = "workingex" src ="/assets/images/Untitled design-4.png">
+        </div>
+
+    {{#if currentUser}}
+        <div class="signup">
+        <a id ="signupb" href="/{{currentUser.details.username}}">Go to your Bills</a>
+        </div>
+    {{else}}
+        <div class="signup">
+        <h2>Ready to take control of your bills?</h2>
+        <a id ="signupb" href="/user/signup">Sign up for CheckUp!</a>
+        </div>
+    {{/if}}
+{{!-- 
+        <div class="signup">
+            <h2>Ready to take control of your bills?</h2>
+            <a id ="signupb" href="/user/signup">Sign up for CheckUp!</a>
+        </div> --}}
+        <div class="about_us">
+            <h3>Get to know us</h3>
+            <a id ="signupb" href="aboutUs">About us</a>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
